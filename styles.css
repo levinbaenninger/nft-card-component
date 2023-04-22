@@ -108,20 +108,86 @@ body {
 
 /* Media Queries */
 
-@media screen and (min-height: 800px) {
+@media screen and (min-height: 800px) and (orientation: portrait) {
 	.container {
 		height: 70%;
 	}
 }
 
-@media screen and (min-height: 1050px) {
+@media screen and (min-height: 1050px) and (orientation: portrait) {
 	.container {
 		height: 55%;
 	}
 }
 
-@media screen and (min-height: 1400px) {
+@media screen and (min-height: 1400px) and (orientation: portrait){
 	.container {
 		height: 40%;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.container {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 29%;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.container {
+		width: 24%;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.container {
+		width: 20%;
+	}
+}
+
+@media screen and (min-height: 700px) and (orientation: landscape) {
+	.container {
+		height: 80%;
+	}
+}
+
+@media screen and (min-height: 800px) and (orientation: landscape) {
+	.container {
+		height: 72%;
+	}
+}
+
+@media screen and (min-height: 900px) and (orientation: landscape) {
+	.container {
+		height: 65%;
+	}
+}
+
+@media screen and (min-height: 1000px) and (orientation: landscape) {
+	.container {
+		height: 58.7%;
+	}
+}
+
+@media screen and (min-height: 1200px) and (orientation: landscape) {
+	.container {
+		height: 54.5%;
 	}
 }
