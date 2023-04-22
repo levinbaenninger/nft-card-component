@@ -20,6 +20,12 @@ body {
 	color: hsl(0, 0%, 100%);
 	font-size: 1.5rem;
 	margin: .5em 0 .5em;
+	transition: color 300ms ease-in-out;
+}
+
+.title:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
 }
 
 .description {
@@ -51,7 +57,7 @@ body {
 	gap: .35em;
 }
 
-.line	{
+.line {
 	color: hsl(215, 32%, 27%);
 }
 
@@ -68,6 +74,12 @@ body {
 
 .sub-text span {
 	color: white;
+	transition: color 300ms ease-in-out;
+}
+
+.sub-text span:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
 }
 
 /* Layout */
@@ -84,6 +96,34 @@ body {
 
 .content-container {
 	padding: 1em 1em 0 1em;
+}
+
+.container .main-image {
+	position: relative;
+}
+
+.container .main-image div {
+	position: absolute;
+	top: 0;
+	background-color: hsl(178, 100%, 50%, 60%);
+	width: 100%;
+	height: calc(100% - 4px);
+	z-index: 999;
+	opacity: 0;
+	border-radius: .5em;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.container .main-image div:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.container .main-image div img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .nft {
@@ -120,7 +160,7 @@ body {
 	}
 }
 
-@media screen and (min-height: 1400px) and (orientation: portrait){
+@media screen and (min-height: 1400px) and (orientation: portrait) {
 	.container {
 		height: 40%;
 	}
