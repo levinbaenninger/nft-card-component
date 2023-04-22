@@ -9,5 +9,119 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Outfit', sans-serif;
+	font-weight: 300;
+	font-size: 1.25rem;
+	overflow: hidden;
 }
 
+/* Typography */
+
+.title {
+	color: hsl(0, 0%, 100%);
+	font-size: 1.5rem;
+	margin: .5em 0 .5em;
+}
+
+.description {
+	color: rgb(107, 129, 161);
+	font-weight: 300;
+	font-size: 1rem;
+	margin: 0 0 .75em;
+	line-height: 1.6;
+}
+
+
+.price {
+	color: hsl(178, 100%, 50%);
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	gap: .35em;
+}
+
+.eth-icon {
+	font-size: .75rem;
+}
+
+.time {
+	color: rgb(107, 129, 161);
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	gap: .35em;
+}
+
+.line	{
+	color: hsl(215, 32%, 27%);
+}
+
+.avatar {
+	height: 50px;
+	border: white 1px solid;
+	border-radius: 50%;
+}
+
+.sub-text {
+	color: rgb(107, 129, 161);
+	font-size: 1rem;
+}
+
+.sub-text span {
+	color: white;
+}
+
+/* Layout */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	height: 85%;
+	background-color: hsl(216, 50%, 16%);
+	border-radius: .5em;
+	overflow: scroll;
+}
+
+.content-container {
+	padding: 1em 1em 0 1em;
+}
+
+.nft {
+	width: 100%;
+	border-radius: .5em;
+}
+
+.creator {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: .75em;
+	margin: auto 0 1em;
+}
+
+.price-time {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 0 .75em;
+}
+
+/* Media Queries */
+
+@media screen and (min-height: 800px) {
+	.container {
+		height: 70%;
+	}
+}
+
+@media screen and (min-height: 1050px) {
+	.container {
+		height: 55%;
+	}
+}
+
+@media screen and (min-height: 1400px) {
+	.container {
+		height: 40%;
+	}
+}
